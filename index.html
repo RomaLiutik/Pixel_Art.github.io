@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title> Python project </title>
+		<meta charset='utf-8'>
 		
 		<style>
 			
@@ -13,6 +14,15 @@
 			}
 			#body{
 				background-color:#DDDFC7;
+			}
+			.html,body{
+				overflow-x: hidden;
+			}
+			#green_text{
+				color:#00ff00;
+			}
+			#red_text{
+				color:#ff0000;
 			}
 			
 		</style>
@@ -45,12 +55,53 @@
 				 Хочу изучить java и c#.<br>
 			</p>
 		</div>
+		<div>
+			<h2 id='Pixel_art_name'> Проект Pixel Art.<i id = 'green_text'>(Активен)</i> </h2>
+			<p id = 'Pixel_art_text'>
+			 Проект Pixel Art это редактор пиксельных изображений в формате 2D. <br>
+			Идея для проекта была создана при неудобстве рисовать пиксельные<br>
+			2D рисунки на бумаге. <br>
+			 Информация о проекте:<br>
+			   Язык программирования : python<br>
+			   Библиотека для компиляции в exe : pyinstaller<br>
+			   Библиотека для создания GUI : Tkinter<br>
+			   
+ 			</p>
+			<dir>
+				<h3 id='Pixel_art_v0_1a'> Pixel Art v0.1a </h3>
+				<p id = 'Pixel_art_v0_1a_text'>
+				 Первая версия проекта Pixel Art является тестовой версией<br>
+				определения координат клика на холсте(для тех кто рабирается).<br>
+				 Информация о компонентах данной версии : <br>
+				   Work Space v1 :<br>
+					Имеет размер 15х15 клеток.<br>
+					Не изменяется.<br>
+				   Palette v1<br>
+					Имеет два цвета :<br>
+					  Белый, чёрный<br>
+					  <br>
+				Установка :<br>
+				  Для того что-бы установить готовое приложение exe<br>
+				 надо просто скачать этот <a> файл </a>, а затем<br>
+				 открыть его на компьютере.<br><br>
+				Исходный <a href='Pixel_Art/v0_1a/PixelArt_2D_0_1a.py' download> файл </a>.
+				</p>
+			</dir>
+		</div>
 		<script>
-			$('#h3_in_start_text').offset({ left : 200, top: 225})
-			$('#p_in_start_text').offset({ left : 150 , top: 275})
+			$('#h3_in_start_text').offset({ left : 200, top : 225});
+			$('#p_in_start_text').offset({ left : 150 , top : 275});
 			
-			$('#h3_in_obo_mne_text').offset({left : 800, top: 225})
-			$('#p_in_obo_mne_text').offset({left : 750, top: 275})
+			$('#h3_in_obo_mne_text').offset({left : 800, top : 225});
+			$('#p_in_obo_mne_text').offset({left : 750, top : 275});
+			
+			// Проекты
+			$('#Pixel_art_name').offset({left : 500, top : 450});
+			$('#Pixel_art_text').offset({left : 400, top : 500});
+			
+			// Версии Pixel Art
+			$('#Pixel_art_v0_1a').offset({left : 550, top : 650});
+			$('#Pixel_art_v0_1a_text').offset({ left : 400, top : 700 })
 			
 		</script>
 		
