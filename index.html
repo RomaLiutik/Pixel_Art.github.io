@@ -78,7 +78,7 @@
 			   Библиотека для создания GUI : Tkinter<br>
 			   
  			</p>
-			<dir>
+			<dir id = 'Pixel_art0.1a'>
 				<h3 id='Pixel_art_v0_1a'> Pixel Art v0.1a </h3>
 				<p id = 'Pixel_art_v0_1a_text'>
 				 Первая версия проекта Pixel Art является тестовой версией<br>
@@ -114,16 +114,18 @@
 			$('#Pixel_art_v0_1a').offset({left : 550, top : 850});
 			$('#Pixel_art_v0_1a_text').offset({ left : 400, top : 900 })
 			
+			function SmoothScrollTo(id_or_Name, timelength){
+				var timelength = timelength || 1000;
+				$('html, body').animate({
+					scrollTop: $(id_or_Name).offset().top-70
+				}, timelength, function(){
+					window.location.hash = id_or_Name;
+				});
+			}
+			
 			$('#o1').on('click',function () {
-				var body = $("body, html");
-				var top = body.scrollTop() // Get position of the body
-				if(top!=0)
-				{
-					body.animate({scrollTop :0}, 500,function(){
-					//DO SOMETHING AFTER SCROLL ANIMATION COMPLETED
-					alert('Hello');
-					});
-				}
+				SmoothScrollTo("#Pixel_Art", 1000);
+
 				
 			});
 			
