@@ -58,10 +58,11 @@
 				 Хочу изучить java и c#.<br>
 			</p>
 		</div>
-		<div>
+		<div id = 'ogl'>
 			<h2 id = 'oglavlenie'> Оглавление </h2>
-			<p>
+			<p id = 'ogl_text'>
 			<button id = 'o1'>Pixel Art</button>
+			<button id = 'o2'> Text Editor </button>
 			
 			</p>
 		</div>
@@ -99,6 +100,26 @@
 				</p>
 			</dir>
 		</div>
+		
+		<dir id = 'Text_Editor'>
+			<h3 id = 'Text_Editor_name'> Text Editor <i id = 'blue_text'> (Приостоновлено) </i>. </h3>
+			<p id = 'Text_Editor_text'> 
+				Text Editor это обычный текстовый редактор который<br>
+				я сделал когда увлекался программированием своего<br>
+				языка.
+			</p>
+			<dir id = 'Text_Editor_v0_1'>
+				<h3 id = 'Text_Editor_v0_1_name'> Text Editor v0.1 </h3>
+				<p id = 'Text_Editor_v0_1_text'>
+					Установка :<br>
+				  Для того что-бы установить готовое приложение exe<br>
+				 надо просто скачать этот <a href = 'https://romaliutik.github.io/Text_Editor/v0_1/TextEditor.exe' download> файл </a>, а затем<br>
+				 открыть его на компьютере.<br><br>
+				Исходный <a href='https://romaliutik.github.io/Text_Editor/v0_1/TextEditor.py' download> файл </a>.
+				</p>
+			</dir>
+		</dir>
+		
 		<script>
 			$('#h3_in_start_text').offset({ left : 200, top : 225});
 			$('#p_in_start_text').offset({ left : 150 , top : 275});
@@ -110,9 +131,19 @@
 			$('#Pixel_art_name').offset({left : 500, top : 650});
 			$('#Pixel_art_text').offset({left : 400, top : 700});
 			
-			// Версии Pixel Art
+			$('#Text_Editor_name').offset({left: 500, top:1250})
+			$('#Text_Editor_text').offset({left : 400, top: 1300})
+			
+			// Версии
 			$('#Pixel_art_v0_1a').offset({left : 550, top : 850});
 			$('#Pixel_art_v0_1a_text').offset({ left : 400, top : 900 })
+			
+			$('#Text_Editor_v0_1_name').offset({left : 550, top : 1400})
+			$('#Text_Editor_v0_1_text').offset({left : 400, top : 1450})
+			
+			//Оглавление
+			$('#oglavlenie').offset({left : 500, top : 500})
+			$('#ogl_text').offset({left : 400, top : 550})
 			
 			function SmoothScrollTo(id_or_Name, timelength){
 				var timelength = timelength || 1000;
@@ -125,6 +156,12 @@
 			
 			$('#o1').on('click',function () {
 				SmoothScrollTo("#Pixel_Art", 1000);
+
+				
+			});
+			
+			$('#o2').on('click',function () {
+				SmoothScrollTo("#Text_Editor", 1000);
 
 				
 			});
