@@ -59,6 +59,14 @@
 			</p>
 		</div>
 		<div>
+			<h2 id = 'oglavlenie'> Оглавление </h2>
+			<p>
+			<button id = 'o1'>Pixel Art</button>
+			
+			</p>
+		</div>
+		
+		<div id = 'Pixel_Art'>
 			<h2 id='Pixel_art_name'> Проект Pixel Art.<i id = 'green_text'>(Активен)</i> </h2>
 			<p id = 'Pixel_art_text'>
 			 Проект Pixel Art это редактор пиксельных изображений в формате 2D. <br>
@@ -99,12 +107,25 @@
 			$('#p_in_obo_mne_text').offset({left : 750, top : 275});
 			
 			// Проекты
-			$('#Pixel_art_name').offset({left : 500, top : 450});
-			$('#Pixel_art_text').offset({left : 400, top : 500});
+			$('#Pixel_art_name').offset({left : 500, top : 650});
+			$('#Pixel_art_text').offset({left : 400, top : 700});
 			
 			// Версии Pixel Art
-			$('#Pixel_art_v0_1a').offset({left : 550, top : 650});
-			$('#Pixel_art_v0_1a_text').offset({ left : 400, top : 700 })
+			$('#Pixel_art_v0_1a').offset({left : 550, top : 850});
+			$('#Pixel_art_v0_1a_text').offset({ left : 400, top : 900 })
+			
+			$('#o1').on('click',function () {
+				var body = $("body, html");
+				var top = body.scrollTop() // Get position of the body
+				if(top!=0)
+				{
+					body.animate({scrollTop :0}, 500,function(){
+					//DO SOMETHING AFTER SCROLL ANIMATION COMPLETED
+					alert('Hello');
+					});
+				}
+				
+			});
 			
 		</script>
 		
