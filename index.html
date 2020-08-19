@@ -73,6 +73,10 @@
 			
 			<button id = 'TE1'> Text Editor v0.1 </button>
 			
+			<br>
+			
+			<button id = 'otz'> Отзывы и предложения. </button>
+			
 			</p>
 		</div>
 		
@@ -152,6 +156,7 @@
 				</p>
 			</dir>
 		</dir>
+		<iframe id = 'Otzivi' src="https://discord.com/widget?id=745638754752135228&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 		
 		<script>
 			$('#h3_in_start_text').offset({ left : 200, top : 225});
@@ -177,9 +182,11 @@
 			$('#Text_Editor_v0_1_name').offset({left : 550, top : 1800})
 			$('#Text_Editor_v0_1_text').offset({left : 400, top : 1850})
 			
-			//Оглавление
+			//Другое
 			$('#oglavlenie').offset({left : 500, top : 500})
 			$('#ogl_text').offset({left : 400, top : 550})
+			
+			$('#Otzivi').offset({left : 400, top : 2000})
 			
 			function SmoothScrollTo(id_or_Name, timelength){
 				var timelength = timelength || 1000;
@@ -209,6 +216,9 @@
 			});
 			$('#TE1').on('click', function(){
 				SmoothScrollTo('#Text_Editor_v0_1', 1000)
+			});
+			$('#otz').on('click', function(){
+				SmoothScrollTo('#Otzivi', 1000)
 			});
 			
 			
