@@ -6,13 +6,13 @@
 		<style>
 			
 			#head{
-				color:#CCD300;
+				color:#BDFF00;
 				background-color:blue;
 				border:50px solid blue;
 				font-size:50px;
 			}
 			#body{
-				background-color:#88897A;
+				background-color:#DDDFC7;
 			}
 			
 		</style>
@@ -22,6 +22,24 @@
 		<script src = 'jquery-2.2.4.min.js'></script>
 		
 		<h1 id='head'> My Python Projects. </h1>
+		
+		<div id='start_test'>
+			<h3 id = 'h3_in_start_text'> Немного о сайте. </h3>
+			<p id = 'p_in_start_text'> 
+				 Этот сайт был создан для того что-бы я мог<br>
+				делиться своими достойными проектами<br>
+				написаные на языке программирования python.<br>
+				 Я буду выкладывать программы уже в расширении<br>
+				.exe, а так же исходники которые могут заинте-<br>
+				ресовать людей разбирающихся в python.<br>
+			</p>
+		</div>
+		
+		<script>
+			$('#h3_in_start_text').offset({ left : 200 })
+			$('#p_in_start_text').offset({ left : 150 })
+			
+		</script>
 		
 	</body>
 </html>
