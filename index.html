@@ -61,8 +61,17 @@
 		<div id = 'ogl'>
 			<h2 id = 'oglavlenie'> Оглавление </h2>
 			<p id = 'ogl_text'>
-			<button id = 'o1'>Pixel Art</button>
-			<button id = 'o2'> Text Editor </button>
+			<button id = 'b1'>Pixel Art</button>
+			<button id = 'b2'> Text Editor </button>
+			
+			<br>
+			
+			<button id = 'PA1'> Pixel Art v0.1a </button>
+			<button id = 'PA2'> Pixel Art v0.2a </button>
+			
+			<br>
+			
+			<button id = 'TE1'> Text Editor v0.1 </button>
 			
 			</p>
 		</div>
@@ -79,7 +88,7 @@
 			   Библиотека для создания GUI : Tkinter<br>
 			   
  			</p>
-			<dir id = 'Pixel_art0.1a'>
+			<dir id = 'Pixel_art0_1a'>
 				<h3 id='Pixel_art_v0_1a'> Pixel Art v0.1a </h3>
 				<p id = 'Pixel_art_v0_1a_text'>
 				 Первая версия проекта Pixel Art является тестовой версией<br>
@@ -99,10 +108,34 @@
 				Исходный <a href='https://romaliutik.github.io/Pixel_Art/v1_0a/PixelArt_2D_0_1a.py' download> файл </a>.
 				</p>
 			</dir>
+			
+			<dir id = 'Pixel_art0_2a'>
+				<h3 id='Pixel_art_v0_2a'> Pixel Art v0.2a </h3>
+				<p id = 'Pixel_art_v0_2a_text'>
+				 Информация о компонентах данной версии : <br>
+				   Work Space v1 :<br>
+					Имеет размер 15х15 клеток.<br>
+					Не изменяется.<br>
+				   Palette v1.2<br>
+					Имеет пять цветов :<br>
+					  Белый, чёрный, красный, синий, зелёный<br>
+					  <br>
+				Дополнения : <br>
+					Функция очистки холста.<br>
+					Функция "save as"<br>
+					  <br>
+				Установка :<br>
+				  Для того что-бы установить готовое приложение exe<br>
+				 надо просто скачать этот <a href = 'https://drive.google.com/u/1/uc?id=1odlv8PXNKyCWmI8tqpzm3g2MSudqIpff&export=download' download> файл </a>, а затем<br>
+				 открыть его на компьютере.<br><br>
+				Исходный <a href='https://romaliutik.github.io/Pixel_Art/v0_2a/PixelArt_2D_0.2a.py' download> файл </a>.
+				</p>
+			</dir>
+			
 		</div>
 		
 		<dir id = 'Text_Editor'>
-			<h3 id = 'Text_Editor_name'> Text Editor <i id = 'blue_text'> (Приостоновлено) </i>. </h3>
+			<h2 id = 'Text_Editor_name'> Text Editor <i id = 'blue_text'> (Приостоновлено) </i>. </h2>
 			<p id = 'Text_Editor_text'> 
 				Text Editor это обычный текстовый редактор который<br>
 				я сделал когда увлекался программированием своего<br>
@@ -131,15 +164,18 @@
 			$('#Pixel_art_name').offset({left : 500, top : 650});
 			$('#Pixel_art_text').offset({left : 400, top : 700});
 			
-			$('#Text_Editor_name').offset({left: 500, top:1250})
-			$('#Text_Editor_text').offset({left : 400, top: 1300})
+			$('#Text_Editor_name').offset({left: 500, top:1650})
+			$('#Text_Editor_text').offset({left : 400, top: 1700})
 			
 			// Версии
 			$('#Pixel_art_v0_1a').offset({left : 550, top : 850});
 			$('#Pixel_art_v0_1a_text').offset({ left : 400, top : 900 })
 			
-			$('#Text_Editor_v0_1_name').offset({left : 550, top : 1400})
-			$('#Text_Editor_v0_1_text').offset({left : 400, top : 1450})
+			$('#Pixel_art_v0_2a').offset({left : 550, top : 1250})
+			$('#Pixel_art_v0_2a_text').offset({left : 400, top : 1300})
+			
+			$('#Text_Editor_v0_1_name').offset({left : 550, top : 1800})
+			$('#Text_Editor_v0_1_text').offset({left : 400, top : 1850})
 			
 			//Оглавление
 			$('#oglavlenie').offset({left : 500, top : 500})
@@ -154,17 +190,27 @@
 				});
 			}
 			
-			$('#o1').on('click',function () {
+			$('#b1').on('click',function () {
 				SmoothScrollTo("#Pixel_Art", 1000);
 
 				
 			});
 			
-			$('#o2').on('click',function () {
+			$('#b2').on('click',function () {
 				SmoothScrollTo("#Text_Editor", 1000);
 
 				
 			});
+			$('#PA1').on('click', function(){
+				SmoothScrollTo('#Pixel_art0_1a', 1000)
+			});
+			$('#PA2').on('click', function(){
+				SmoothScrollTo('#Pixel_art0_2a', 1000)
+			});
+			$('#TE1').on('click', function(){
+				SmoothScrollTo('#Text_Editor_v0_1', 1000)
+			});
+			
 			
 		</script>
 		
