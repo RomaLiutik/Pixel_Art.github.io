@@ -1,10 +1,8 @@
 .head {
-	background-color: #d0ff00;
 	height: 175px;
 }
 
-.content {
-	background-color: #d0ff00;
+.content {;
 	height: 500px;
 	width: 953px;
 
@@ -15,7 +13,6 @@
 }
 
 .sidebar {
-	background-color: #d0ff00;
 	height : 250px;
 	width : 225px;
 }
@@ -23,7 +20,6 @@
 
 
 .contacts {
-	background-color: #d0ff00;
 	height: 150px;
 
 }
