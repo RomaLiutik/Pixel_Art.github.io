@@ -2,20 +2,30 @@
 	background-color: #6fd166;
 	width : 225px;
 	height : 350px;
+	border: 6px solid #6fd166;
+	border-radius: 30px;
 }
 
 .head {
 	background-color: #6fd166;
+	border: 6px solid #6fd166;
+	border-radius: 30px;
 }
 
 .content {
 	background-color: #6fd166;
+	border: 6px solid #6fd166;
+	border-radius: 30px;
 }
 
 .sidebar {
 	background-color: #6fd166;
+	border: 6px solid #6fd166;
+	border-radius: 30px;
 }
 
 
 .contacts {
 	background-color: #6fd166;
+	border: 6px solid #6fd166;
+	border-radius: 30px;
