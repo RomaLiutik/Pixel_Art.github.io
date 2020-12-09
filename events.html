@@ -11,6 +11,7 @@
 		
 		<dir class = "body">
 			<dir class = "head">
+				<img src="photos/head.jpg" class = "head_img">
 				<h1 class = "mi">Minecraft server</h1>
 			</dir>
 	
@@ -83,6 +84,8 @@
 			var contacts_left = 25;
 
 			$(".head").offset({top: head_top, left: head_left});
+			$(".head_img").offset({top: head_top, left: head_left});
+			$(".mi").offset({top: head_top + 50, left: head_left + 450});
 	
 			$(".content").offset({top: content_top ,left : content_left});
 	
