@@ -17,10 +17,27 @@
 		<script type="text/javascript" src="jquery.js"></script>
 		<!-- Скрипты offset -->
 		<script type="text/javascript">
-			
+			const delay = ms => new Promise(res => setTimeout(res, ms));
+			function getRandomInt(max) {
+			  return Math.floor(Math.random() * max);
+			}
 			var cost = 20;
 			
 			$(".mi").offset({top: head_top + 50, left: head_left + 300});
+			while(true){
+				await delay(6000);
+				if (getRandomInt(2) == 1){
+					cost += getRandomInt(20);
+				}else{
+					cost -= getRandomInt(10);
+				}
+				
+				if (cost <= 0){
+					cost = 20;
+				}
+				$(".mi").text(cost);
+			}
+			
 	
 		</script>
 		<!-- Скрипты для регистрации -->
